@@ -1,0 +1,11 @@
+{
+  "env": {
+    "node": 1
+  },
+  "rules": {
+    "quotes": [2, "double", { "avoidEscape": true }],
+    "comma-dangle": ["error", "never"],
+    "arrow-parens": [2, "as-needed"],
+    "arrow-body-style": ["error", "as-needed"]
+  }
+}

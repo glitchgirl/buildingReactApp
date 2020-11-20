@@ -1,9 +1,11 @@
 import React from "react";
-import SearchBar from "./searchBar";
+import SearchBar from "./SearchBar";
 import youtube from "../apis/youtube";
-import VideoList from "./videolist";
+import VideoList from "./Videolist";
+
 class App extends React.Component {
   state = { videos: [] };
+
   onTermSubmit = async term => {
     const response = await youtube.get("/search", {
       params: {
@@ -13,6 +15,7 @@ class App extends React.Component {
 
     this.setState({ videos: response.data.items });
   };
+
   render() {
     return (
       <div>
